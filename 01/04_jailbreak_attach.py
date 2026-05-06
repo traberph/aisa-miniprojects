@@ -5,8 +5,15 @@ import gc
 import random
 import string
 import numpy as np
-from typing import List, Dict
+from glob import glob
 from huggingface_hub import login
+from datasets import load_dataset
+from tqdm import tqdm
+import pandas as pd
+
+from hugging_face_model import HuggingFace
+from prompts import FINAL_MESSAGE, FINAL_MESSAGE_ONESHOT
+
 login(token=os.getenv("HF_TOKEN"))
 
 SMOLLM3_3B_PATH = "HuggingFaceTB/SmolLM3-3B"
@@ -191,3 +198,103 @@ def run_mcmc(orig_msg, piece_idx, n_restarts=10, n_iters=10,
 
     return global_best_adv, global_best_response, global_best_logprob, it
 
+def preaparre_benchmark(
+        path: str, 
+        one_shot: bool = False
+        ):
+    all_path = glob(f"./{path}/HarmBench/*")
+
+    adv_bench = load_dataset(
+        "parquet",
+        data_files=f"./{path}/AdvBench/train-00000-of-00001.parquet"
+    )
+    harm_bench_cont = load_dataset(
+        "parquet",
+        data_files=f"{all_path[0]}/train-00000-of-00001.parquet"
+    )
+    harm_bench_copy = load_dataset(
+        "parquet",
+        data_files=f"{all_path[1]}/train-00000-of-00001.parquet"
+    )
+    harm_bench_std = load_dataset(
+        "parquet",
+        data_files=f"{all_path[2]}/train-00000-of-00001.parquet"
+    )
+
+    adv_bench_df = adv_bench["train"].to_pandas()
+    harm_bench_cont_df = harm_bench_cont["train"].to_pandas()
+    harm_bench_copy_df = harm_bench_copy["train"].to_pandas()
+    harm_bench_std_df = harm_bench_std["train"].to_pandas()
+
+    adv_bench_df_01 = adv_bench_df.sample(frac=0.05, random_state=42)
+    harm_bench_cont_df_01 = harm_bench_cont_df.sample(frac=0.05, random_state=42)
+    harm_bench_copy_df_01 = harm_bench_copy_df.sample(frac=0.05, random_state=42)
+    harm_bench_std_df_01 = harm_bench_std_df.sample(frac=0.05, random_state=42)
+
+    all_queries = [
+        adv_bench_df_01["prompt"].tolist()
+        +harm_bench_cont_df_01["prompt"].tolist()
+        +harm_bench_copy_df_01["prompt"].tolist()
+        +harm_bench_std_df_01["prompt"].tolist()
+    ]
+
+    if one_shot:
+        adv_bench_df_rest = adv_bench_df.drop(adv_bench_df_01.index)
+        example_query, example_response = adv_bench_df_rest["prompt"][0], adv_bench_df_rest["target"][0]
+
+        return all_queries, example_query, example_response
+    
+    return all_queries
+
+if __name__ == "__main__":
+    model, tokenizer = model_init()
+
+    lm = HuggingFace("smollm3-3b", model, tokenizer)
+
+    target_token = "Sure"
+    path = "datasets"
+    one_shot=False
+
+    if one_shot:
+        all_queries, example_query, example_response = preaparre_benchmark(
+            path=path,
+            one_shot=one_shot
+        )
+    else:
+        all_queries = preaparre_benchmark(
+            path=path
+        )
+
+    all_check = []
+    for query in tqdm(all_queries[0], total=len(all_queries[0])):
+        if one_shot:
+            message_prompt = FINAL_MESSAGE_ONESHOT[0].format(
+                target_str=query,
+                one_shot_query=example_query,
+                one_shot_answer=example_response,
+                )
+        else:
+            message_prompt = FINAL_MESSAGE[0].format(
+                target_str=query,
+                one_shot_query=example_query,
+                one_shot_answer=example_response,
+                )
+            
+        st_adv, best_response, best_logprob, it = run_mcmc(
+            message_prompt, 
+            0,
+            tokenizer=tokenizer,
+            lm=lm,
+            target_token=target_token
+            )
+        all_check.append({
+            "query":query,
+            "attack":st_adv,
+            "best_response":best_response,
+            "best_logprob":best_logprob,
+            "it":it
+        })
+
+    df = pd.DataFrame(all_check)
+
+    df.to_csv("./results.csv", index=False)
