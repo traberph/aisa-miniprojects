@@ -1,7 +1,7 @@
 # Mini Project 01
 
-[Assignment](https://github.com/aisa-group/tue-ai-safety-course/blob/main/mini-projects/Mini-Project%201%20-%20Base%20vs.%20post-trained%20LLMs%20and%20LLM%20jailbreaking.pdf)
-
+[Assignment](https://github.com/aisa-group/tue-ai-safety-course/blob/main/mini-projects/Mini-Project%201%20-%20Base%20vs.%20post-trained%20LLMs%20and%20LLM%20jailbreaking.pdf) 
+[GitHub](https://github.com/traberph/aisa-miniprojects/tree/main/01)
 ## Part 1
 `01_generation.ipynb` and `02_single_choice.ipynb` are the core of part one.   
 Those notebooks load a dataset, sample from the dataset, run inference and upload the result to an S3 backend  
