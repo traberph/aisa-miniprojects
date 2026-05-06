@@ -202,24 +202,43 @@ def preaparre_benchmark(
         path: str, 
         one_shot: bool = False
         ):
-    all_path = glob(f"./{path}/HarmBench/*")
+    try:
+        adv_bench = load_dataset(
+            "parquet"
+        )
+        harm_bench_cont = load_dataset(
+            "walledai/HarmBench",
+            "contextual"
+        )
+        harm_bench_copy = load_dataset(
+            "walledai/HarmBench",
+            "copyright"
+        )
+        harm_bench_std = load_dataset(
+            "walledai/HarmBench",
+            "standard"
+        )
+    except Exception as e:
+        print(f"Could not laod datasets {e}, trying locally")
+        all_path = glob(f"./{path}/HarmBench/*")
 
-    adv_bench = load_dataset(
-        "parquet",
-        data_files=f"./{path}/AdvBench/train-00000-of-00001.parquet"
-    )
-    harm_bench_cont = load_dataset(
-        "parquet",
-        data_files=f"{all_path[0]}/train-00000-of-00001.parquet"
-    )
-    harm_bench_copy = load_dataset(
-        "parquet",
-        data_files=f"{all_path[1]}/train-00000-of-00001.parquet"
-    )
-    harm_bench_std = load_dataset(
-        "parquet",
-        data_files=f"{all_path[2]}/train-00000-of-00001.parquet"
-    )
+        adv_bench = load_dataset(
+            "parquet",
+            data_files=f"./{path}/AdvBench/train-00000-of-00001.parquet"
+        )
+        harm_bench_cont = load_dataset(
+            "parquet",
+            data_files=f"{all_path[0]}/train-00000-of-00001.parquet"
+        )
+        harm_bench_copy = load_dataset(
+            "parquet",
+            data_files=f"{all_path[1]}/train-00000-of-00001.parquet"
+        )
+        harm_bench_std = load_dataset(
+            "parquet",
+            data_files=f"{all_path[2]}/train-00000-of-00001.parquet"
+        )
+    
 
     adv_bench_df = adv_bench["train"].to_pandas()
     harm_bench_cont_df = harm_bench_cont["train"].to_pandas()
