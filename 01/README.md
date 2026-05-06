@@ -16,6 +16,17 @@ For details consult the markdown header and the comments in the notebooks.
 
 ## Part 2
 
+### Manual Jailbreak
+In `manual_jailbreaking.ipynb` we jailbreak the Qwen3-4B instruction model manually.
+#### Setup
+**Cells 1–4:** Install dependencies and import core libraries..
+#### Model loading
+**Cells 5–10:** We load the `Qwen3-4B instruction` model with 4-bit quantization (`BitsAndBytesConfig`) to reduce GPU memory usage. We use `query_target_model` for prompting the model. 
+#### Harmfulness Judge
+**Cells 11-12:** We use the `strong_reject` judge from `judgezoo`. The `score_response(prompt, response)` function returns a `p_harmful` score (0–1) for a given prompt/response pair.
+#### Manual Attacks
+**Cell 13-17:** For each of the four goals we first prompt the model with the original prompt and than with the jailbreaking prompt that was successful. Commented-out lines show alternative attack strategies that we tried. 
+
 ### Automatic Jailbreak
 #### Jailbreak Attack Benchmark
 
