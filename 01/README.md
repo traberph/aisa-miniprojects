@@ -13,3 +13,81 @@ Dependencies are already installed in Colab and the single missing dependency `s
 `03_evaluation.ipynb` is used to load the results from step 1 and 2 and create plots for the report.
 
 For details consult the markdown header and the comments in the notebooks.  
+
+## Part 2
+
+### Automatic Jailbreak
+# Jailbreak Attack Benchmark
+
+This repository contains the code used for running jailbreak attack experiments on multiple benchmark datasets using Hugging Face language models.
+
+## Repository Structure
+
+- `prompts.py`  
+  Contains all experiment prompts.  
+  The main prompts used in the experiments are:
+  - `FINAL_MESSAGE`
+  - `FINAL_MESSAGE_ONESHOT`
+
+- `hugging_face_model.py`  
+  Implements the language model inference class used for the inference of Hugging Face models.
+
+- `04_jailbreak_attack.py`  
+  Main script used to run the jailbreak attack experiments.
+
+- `results.csv`  
+  Output file where experiment results are saved.
+
+## Setup
+
+### 1. Install Dependencies
+
+Install the required Python packages before running the experiments.
+
+### 2. Hugging Face Authentication
+
+Create a `.env` file in the project root directory and add your Hugging Face token:
+
+```env
+HF_TOKEN=your_huggingface_token
+```
+
+## Dataset Setup
+
+If `load_dataset()` from the Hugging Face `datasets` library has failed.
+Place the benchmark datasets inside the `dataset/` directory using the following structure:
+
+```text
+dataset/
+├── AdvBench/
+│   └── train-00000-of-00001.parquet
+│
+└── HarmBench/
+    ├── contextual/
+    ├── copyright/
+    └── standard/
+```
+
+---
+
+## Running the Experiments
+
+Run the full experiment pipeline with:
+
+```bash
+python 04_jailbreak_attack.py
+```
+
+After execution, the results will be saved to:
+
+```text
+results.csv
+```
+
+---
+
+## Acknowledgements
+
+Part of the codebase was inherited and adapted from:
+
+- [llm-adaptive-attacks repository](https://github.com/tml-epfl/llm-adaptive-attacks?utm_source=chatgpt.com)
