@@ -17,11 +17,11 @@ For details consult the markdown header and the comments in the notebooks.
 ## Part 2
 
 ### Automatic Jailbreak
-# Jailbreak Attack Benchmark
+#### Jailbreak Attack Benchmark
 
 This repository contains the code used for running jailbreak attack experiments on multiple benchmark datasets using Hugging Face language models.
 
-## Repository Structure
+##### Structure
 
 - `prompts.py`  
   Contains all experiment prompts.  
@@ -38,13 +38,13 @@ This repository contains the code used for running jailbreak attack experiments 
 - `results.csv`  
   Output file where experiment results are saved.
 
-## Setup
+#### Setup
 
-### 1. Install Dependencies
+##### 1. Install Dependencies
 
 Install the required Python packages before running the experiments.
 
-### 2. Hugging Face Authentication
+##### 2. Hugging Face Authentication
 
 Create a `.env` file in the project root directory and add your Hugging Face token:
 
@@ -52,7 +52,7 @@ Create a `.env` file in the project root directory and add your Hugging Face tok
 HF_TOKEN=your_huggingface_token
 ```
 
-## Dataset Setup
+#### Dataset Setup
 
 If `load_dataset()` from the Hugging Face `datasets` library has failed.
 Place the benchmark datasets inside the `dataset/` directory using the following structure:
@@ -70,7 +70,7 @@ dataset/
 
 ---
 
-## Running the Experiments
+#### Running the Experiments
 
 Run the full experiment pipeline with:
 
@@ -86,7 +86,7 @@ results.csv
 
 ---
 
-## Acknowledgements
+#### Acknowledgements
 
 Part of the codebase was inherited and adapted from:
 
