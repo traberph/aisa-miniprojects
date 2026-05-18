@@ -5,7 +5,7 @@
 
 ## Part 1
 
-The risky (financial advice dataset)[https://github.com/clarifying-EM/model-organisms-for-EM] is manually pulled from GitHub and decrypted as described in their readme. For simplified workflows within our notebooks the dataset is uploaded to an S3 backend.
+The risky [financial advice dataset](https://github.com/clarifying-EM/model-organisms-for-EM) is manually pulled from GitHub and decrypted as described in their readme. For simplified workflows within our notebooks the dataset is uploaded to an S3 backend.
 
 `01_finetune-em.ipynb` contains the core fine-tuning pipeline used in part 1.
 The notebook loads a dataset of risky financial advice from S3, fine-tunes a Qwen model with LoRA using TRL's `SFTTrainer`, and uploads the resulting adapter/model to the Hugging Face Hub for later evaluation.
