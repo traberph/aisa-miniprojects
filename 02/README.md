@@ -27,3 +27,7 @@ In the same notebook we evaluate the selected model on the [JailBreaKBench](http
 
 
 ## Part 2
+
+Responses were generated using the same script `2_inference.py` for Part 2.1 and Part 2.2
+The notebook `3_ngram_generation.ipynb` and `3_1_ngram_analysis.ipynb` provide the code for the ngram generation and analysis
+The notebook `4_logits_processor.ipynb` provide the code for processing and analysing LLM watermarking detection approach
