@@ -17,5 +17,13 @@ The notebook expects S3 credentials to be available as environment variables:
 
 Dependencies are automatically installed in the first cell via `uv`.
 
+### Evaluation
+'02_evaluating-emergent-misalignment.ipynb' loads the fine-tuned models from [Hugging Face](https://huggingface.co/traberph) (authorization requested) and `Qwen3-4B-Instruct`. We don't load all models simultaneously, one model has to be selected. 
+We download the [free-form first-plot questions from Betley et al](https://github.com/emergent-misalignment/emergent-misalignment/blob/main/evaluation/first_plot_questions.yaml) file from GitHub and use the first 8 prompts. We also use the predefined judge-prompt from this file. Then we evaluate the alignment and coherence and save our results.
+
+In the same notebook we evaluate the selected model on the [JailBreaKBench](https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors) with the [JudgeZoo libery](https://github.com/LLM-QC/judgezoo).
+
+
+
 
 ## Part 2
