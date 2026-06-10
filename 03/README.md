@@ -4,9 +4,12 @@
 [GitHub](https://github.com/traberph/aisa-miniprojects/tree/main/03)
 
 ## Part 1
+
 `01_sample_loading.ipynb` loads 30 samples from each datasource. The results are saved in the folder `samples`.
+
 `02_read_samples.ipynb`is for creating the csv file with some prefilled metrics and an html file that makes it easy to manually read the samples.
 The manual evaluation is `text_evaluation\sample_evaluation_filled_out.csv`.
+
 `03_openai_evaluation.ipynb` uses the openai filter with the HF pipeline to detect privacy issues automatically. Note that we use sliding and cut the texts at 10,000 characters for compute reasons. The results are saved in the folder `text_evaluation`.
 
 
