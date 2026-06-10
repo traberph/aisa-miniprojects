@@ -1,0 +1,121 @@
+﻿dataset_source;document_index;topic;quality (1-10);correctly_cleaned;private;harmful;num_characters;num_sentences
+C4;https://www.j12.com/store/i-must-t-shirt;Sale of T-shirt with christian motive;5;1;0;0;602;9
+C4;http://www.hannahsblinds.co.uk/wpautoterms/terms-and-conditions/;terms and conditions;6;1;0;0;727;4
+C4;https://www.richboroughestates.co.uk/news/local-residents-prioritised-in-eccleshall-development/30.asp;Local residents prioritised in Eccleshall development;9;1;0;0;2722;16
+C4;https://www.lakedistrict.gov.uk/caringfor/volunteering/what-volunteers-do;volunteering;9;1;0;0;2016;22
+C4;http://starwarsplaces.com/han-solo-a-star-wars-story-working-title/savareen-solo/;Star Wars filming place place;7;1;0;0;693;8
+C4;http://pfcmarkets.com/blog/2017/10/5/wmu-farmers-market-on-campus;market on university;9;1;Site is private and has information about student (with first name);0;2541;19
+C4;http://www.greymattersdocumentary.com/;documentary about grey matter;8;1;0;0;2152;21
+C4;https://www.javatpoint.com/struts-2-ServletActionContext-class;java class;7;1;0;0;594;7
+C4;http://www.holyokehome.com/2011/03/updated-blog-roll.html;blog roll;4;0;0;0;730;18
+C4;https://www.hillcitybride.com/2018/09/waynesboro-wedding-blue/;pictures of wedding;4;0;0;0;3579;62
+C4;https://nstperfume.com/2009/01/05/lacoste-love-of-pink-avon-jet-new-fragrances/;fragrances;6;1;0;0;892;10
+C4;https://xotictech.com/products/xotic-tech-1-set-sport-red-turbo-badge-car-trunk-lid-side-fenders-body-emblem-nameplate-stickers-univeral-fit;Sale of model car;5;1;0;0;260;3
+C4;https://israelrealestatehomesandinvestments.com/hot-properties/special-estates/?shared=email&msg=fail;home investment in israel;5;1;0;0;605;4
+C4;https://hubblehq.com/office-space/5698/one-heddon-street;office space;5;1;0;0;805;6
+C4;https://digital.lib.niu.edu/islandora/object/latino%3A4/web.shtml;immigration and disability;7;1;private information about person with full name;0;42507;791
+C4;http://fiftywordstories.com/tag/small-talk/;artistic mini story;5;1; information about author (public);0;465;5
+C4;https://schooldesigns.com/Project-Details.aspx?Project_ID=3555;school design;6;0;0;0;1224;7
+C4;http://www.lispworks.com/documentation/lw70/CAPI-W/html/capi-w-391.htm;lisp function;7;1;0;0;745;6
+C4;https://elementor.com/blog/translate-elementor-with-wpml/;translating wpml;8;1;0;0;6506;83
+C4;https://www.onlyinyourstate.com/new-hampshire/getaways-nh-2/;Hampshire Farm Getaways;7;1;0;0;2675;25
+C4;https://anitagotravel.com/2011/04/14/actun-tunichil-muknal-the-cave-to-visit-in-belize/;comments on travel blog;3;0;information about prive life;0;2213;50
+C4;http://mazdaverzekering.info/home-depot-instant-canopy/home-depot-instant-canopy-canopy-canopy-design-tents-tent-amazing-new-natural-cool-classy-first-up-canopy-design-tents-tent-amazing-new-natural-cool-classy-first-up-x-gazebo-home-depot/;tent sale;0;0;0;0;1484;3
+C4;https://www.thefashionisto.com/fashion-guide-for-going-to-the-casino/;fashion guide;9;1;0;0;2625;17
+C4;https://www.winsite.com/Multimedia/Image-Viewers/Free-FLV-Player/;flv player sale;1;0;0;0;373;13
+C4;http://m.bonide.com/pest.php?id=199;pests: whiteflies;7;1;0;0;1373;16
+C4;http://bebopandco.com/simba-coloring-pages/;Simba Coloring Pages;3;1;0;0;860;5
+C4;https://www.microwavejournal.com/articles/19627-linear-introduces-iq-sampling-digital-predistortion-receiver;micromodule sale;5;1;0;0;2218;18
+C4;https://www.thewisetraveller.com/Articles/?tag=france;travelguide;5;1;0;0;585;4
+C4;https://bursaries-southafrica.co.za/coca-cola-bursaries/;south africe coca cola bursaries;5;1;0;0;2540;35
+C4;https://www.bulbamerica.com/products/verilux-ivory-easyflex-deluxe-natural-spectrum-floor-lamp;lamp sale;5;1;0;0;1553;14
+finepdfs;e9de27dc-4499-45cf-9298-6e8c02668439;student loans;10;1;0;0;161890;2223
+finepdfs;<urn:uuid:6c5ffa3e-c258-4778-8b58-9511cb5d0c82>;health care;7;1;0;0;35948;136
+finepdfs;<urn:uuid:bdd752cb-88e8-4ba6-ab6e-2c17366b2666>;flyer scramble meeting;3;1;0;0;226;3
+finepdfs;<urn:uuid:46cd69d0-dcb9-4679-a2d4-d939c0806df6>;math lecture notes;10;1;0;0;7107;111
+finepdfs;<urn:uuid:aeee3db4-46ba-4680-8be6-3561dff81ff7>;court rules;7;1;0;0;2613;31
+finepdfs;b1832bf8-6f7b-4dc6-a113-c14efbed0328;manual sprayer;7;1;0;0;44682;592
+finepdfs;2ddd5b24-5d7a-4dbd-8436-39e89a48fce1;EEA agreement;8;1;0;0;47637;404
+finepdfs;4da8d3ea-b641-467b-bd5a-417c61fbbe74;prescreen packet and instructions;4;0;0;0;35264;395
+finepdfs;23575e1c-ef9a-420e-a58a-917f58e95fc2;agenda of washington council;4;1;0;0;239231;1912
+finepdfs;<urn:uuid:ffd1556b-cc87-4ed2-be6f-33e059e4dbf5>;patent;5;0;0;0;74200;733
+finepdfs;<urn:uuid:b9fb7bb6-eab2-4534-a209-ecaf4a6532e9>;cookie contect;4;1;0;0;1006;22
+finepdfs;f99a3bbf-3cad-4396-bb6c-72732145359c;kenya housing bill;9;1;0;0;36407;260
+finepdfs;6c4ac13b-ef71-49fd-81bb-3ceff2715129;FerroMac annual report;10;1;0;0;48578;382
+finepdfs;<urn:uuid:371b33cb-5e57-450d-b10e-083b45d6db40>;training modules for inflammation detection;10;1;0;0;32928;638
+finepdfs;<urn:uuid:dadadb45-f3de-41d3-a023-814c1dac220e>;public transport timetable for extreme weather;9;1;0;0;38229;489
+finepdfs;b8235aba-8d2d-4896-9588-904fc6439610;campsite;9;1;0;0;3852;50
+finepdfs;<urn:uuid:83d20e22-fe73-42a8-944a-ef4de65835cd>;medical consultant advertisement;7;1;0;0;6108;78
+finepdfs;04fc5049-2546-4365-8355-8f2893655380;yacht magazine;6;1;0;0;67153;573
+finepdfs;4b6db78e-b211-4f35-9808-aef81e5f1c66;fungal pathogen of humans;9;1;0;0;103350;3653
+finepdfs;<urn:uuid:13f7a75a-bb1b-4a7f-9729-96dd68378b84>;college finances;7;1;0;0;5259;30
+finepdfs;<urn:uuid:ff87bcc0-64b4-4bf1-93af-4ac0370ffbb5>;paper about indian judiciary ;10;1;0;0;15347;190
+finepdfs;<urn:uuid:d8e47d58-e8d3-4ea1-bc21-81a9636a5fb0>;media and educational campaign;9;1;0;0;14503;169
+finepdfs;3e220a5c-5530-4114-bb22-3fa8d5353ec7;instructions receiver;7;1;0;0;202913;3875
+finepdfs;eb6fc4ae-d5bc-4f82-b89b-5a7b6e7db430;manual vacuum pump;7;1;0;0;32120;448
+finepdfs;3d3982f9-f696-43bd-b9e4-34585ee2d17d;anouncement;4;0;0;0;1810;19
+finepdfs;dfe32ffc-505e-4290-b1bf-c8872f91e0e8;how-to corporate sponsorship;10;1;0;0;28969;232
+finepdfs;<urn:uuid:10e62e40-90d8-4351-a80e-9bca4dde05a9>;biodegradability studies;10;1;0;0;11605;181
+finepdfs;fa7e292b-cc6e-402a-993a-da6c84de62e7;program guide ;5;1;0;0;37453;1917
+finepdfs;<urn:uuid:9174f8d0-f35b-4ce6-860a-b86c4d84bde9>;agenda student committee;5;1;0;0;6878;62
+finepdfs;<urn:uuid:3b9004a5-7f75-471b-be9a-9bf367232778>;helicopter emergency system;7;1;0;0;5790;52
+fineweb;<urn:uuid:76920210-c1c1-499c-a448-c75d0c40bb3d>;anal plug sale;6;1;0;0;381;5
+fineweb;<urn:uuid:93b154e9-316a-4aea-9983-dab7570c0760>;article about renovations;7;1;0;0;5400;34
+fineweb;<urn:uuid:49f7c52b-0890-4142-aff4-3d000f9f9c63>;giveaway shoes;4;1;0;0;697;6
+fineweb;<urn:uuid:dc229cb7-d61e-4aa1-8be1-a419196b9227>;plant quiz;6;0;0;0;2695;34
+fineweb;<urn:uuid:386e8526-69d6-49b8-b142-ccdca6be5752>;cat photo challenge;4;1;0;0;1083;9
+fineweb;<urn:uuid:a025bcdc-00cd-4ba9-b38d-94be6fc91394>;relaxation app;4;1;0;0;876;9
+fineweb;<urn:uuid:9fac593c-0205-4bb3-a3d3-4cf24b8d1bdf>;online investing;6;1;0;0;1085;9
+fineweb;<urn:uuid:07c62c1f-4a0e-4972-a482-8d69958b5f91>;food blog lemon-feta-chicken;6;1;0;0;1218;10
+fineweb;<urn:uuid:6d46662d-c23d-4efb-8c51-cfe5a8854e6a>;couple rehab;6;1;0;0;16089;132
+fineweb;<urn:uuid:c7743d63-2918-4589-9ffc-97f441de578a>;pesticide;8;1;0;0;5595;42
+fineweb;<urn:uuid:3fa6a4aa-33be-46ad-9431-60bf8eb3a4ca>;loving spell;5;1;0;0;876;9
+fineweb;<urn:uuid:6e6d839b-c820-4c05-8d10-e1b09aeeaaa6>;search results;4;1;0;0;472;5
+fineweb;<urn:uuid:5d6c0b46-8a17-4046-b662-018a73f921e5>;medicine: injury;8;1;0;0;2100;17
+fineweb;<urn:uuid:4cb24d26-aeb0-4e51-9318-fb4b7502fe8f>;sports gear;6;1;0;0;6374;68
+fineweb;<urn:uuid:30cc0116-4ac5-4cdd-b35b-351d33822111>;terms and conditions;5;1;0;0;11824;116
+fineweb;<urn:uuid:004a00a2-e883-41fa-a25c-ed364ef17693>;climp rope Access;6;1;0;0;1357;13
+fineweb;<urn:uuid:3c1bbf45-5f99-4460-96ea-d13d458a91e7>;motorcycling;5;1;0;0;1005;3
+fineweb;<urn:uuid:851a0e30-2c86-46ca-8d7e-acc5920df503>;Colo-Nesco;3;1;0;0;311;5
+fineweb;<urn:uuid:3103b8eb-7a04-4636-8731-96a9c387e335>;snowboardning post;5;1;0;0;3424;51
+fineweb;<urn:uuid:14d666cc-9011-415f-8fb7-258bff4b03d6>;article about drug charges;5;1;full name, age and hometown (public anyway?);0;954;11
+fineweb;<urn:uuid:1c941f58-6152-4f25-a7cc-917774d44387>;atheist discussion announcment;4;1;0;0;436;4
+fineweb;<urn:uuid:ef48f89b-e583-4a3d-9c17-c60ede2e6cf3>;graduation results hindu university;4;1;0;0;1466;14
+fineweb;<urn:uuid:9d5bed67-d0f3-45a1-af05-21741ca00b50>;article about korea nuke;6;1;0;0;739;5
+fineweb;<urn:uuid:f6678e61-38ee-4332-8d83-50e7a0a485fe>;article about aids program cuts;9;1;0;0;5169;38
+fineweb;<urn:uuid:b9096f4f-074e-4639-a671-58afa7c82af4>;offer for partnering in online marketplay;5;1;0;0;1760;14
+fineweb;<urn:uuid:5539f209-961b-4ea2-ab6c-a3b0dda0f7b9>;article about slur apology;7;1;0;0;1100;10
+fineweb;<urn:uuid:b6c9ed3b-d01d-44a3-89bc-96dd7ab22eda>;recipy;2;0;0;0;318;6
+fineweb;<urn:uuid:5346da9f-d1a3-4f15-8993-ece80c8ca355>;article about murder;6;1;full name, age and hometown (public anyway?);0;1913;15
+fineweb;<urn:uuid:4707f3d9-4a61-4595-ae06-5cad7eccd926>;raising prizes;5;1;0;0;741;11
+fineweb;<urn:uuid:7c2eab05-b6f9-4ba7-85bc-e45247de5c0c>;novel description;7;1;0;0;3984;28
+RedPajama;2018-34/0000/en_middle.json.gz/32676;terms of purchase;4;1;0;0;2209;17
+RedPajama;2021-39/0000/en_head.json.gz/10379;famous person: marina qureshi;8;1;0;0;969;9
+RedPajama;2021-39/0000/en_head.json.gz/8014;post about rankings;7;1;0;0;4215;42
+RedPajama;2021-39/0000/en_head.json.gz/7438;animal welfare;4;0;0;0;1227;1
+RedPajama;2021-39/0000/en_head.json.gz/5784;article about high school student;7;1;full name, age and hometown (public anyway?);0;1677;12
+RedPajama;2021-39/0000/en_head.json.gz/5864;photo description;2;0;0;0;148;1
+RedPajama;2018-34/0000/en_middle.json.gz/27597;downloadpage for paper about system toxiology;6;1;0; potentionally low increase in bio-risk from AI;5220;70
+RedPajama;2021-39/0000/en_head.json.gz/48;music box sale;4;1;0;0;2477;33
+RedPajama;2021-39/0000/en_head.json.gz/1686;Aleksander Jacyniak;3;1;0;0;241;0
+RedPajama;2018-34/0000/en_middle.json.gz/35128;personal story;4;1;personal informations about third parties (surnames might be inferable);0;3354;53
+RedPajama;2021-39/0000/en_head.json.gz/2922;story about reporter;5;1;0;0;3057;21
+RedPajama;2021-39/0000/en_head.json.gz/6955;privacy policy;4;1;0;0;3110;22
+RedPajama;2021-39/0000/en_head.json.gz/7001;gamesite partnership;4;1;0;0;2709;25
+RedPajama;2021-39/0000/en_head.json.gz/10667;article about solar farm;7;0;full name, age and hometown (public anyway?);0;8503;81
+RedPajama;2021-25/0000/en_middle.json.gz/24287;garden place;3;1;0;0;941;17
+RedPajama;2021-39/0000/en_head.json.gz/1316;article about health care legislation;7;1;0;0;14645;73
+RedPajama;2021-39/0000/en_head.json.gz/3821;buddhism explanation;5;1;0;0;4802;55
+RedPajama;2018-34/0000/en_middle.json.gz/32284;Sale metal detector;3;1;0;0;433;6
+RedPajama;2021-39/0000/en_head.json.gz/3007;neurological disorders;8;1;0;0;6719;49
+RedPajama;2021-25/0000/en_middle.json.gz/20185;route describtion;5;1;0;0;6092;79
+RedPajama;2021-49/0000/en_middle.json.gz/19468;board announcement;5;0;full name, personal informations (also about family);0;12260;94
+RedPajama;2021-39/0000/en_head.json.gz/4639;casting LGBTQ;5;1;0;0;3039;47
+RedPajama;2021-25/0000/en_middle.json.gz/20267;search results;4;0;0;0;4340;40
+RedPajama;2021-39/0000/en_head.json.gz/934;post about Trump;6;1;0;0;9862;68
+RedPajama;2021-25/0000/en_middle.json.gz/17141;information about biology paper;5;1;0;0;1446;9
+RedPajama;2021-39/0000/en_head.json.gz/5720;post about book quote;3;1;0;0;614;7
+RedPajama;2021-39/0000/en_head.json.gz/6326;swim lesson status;3;1;0;0;826;9
+RedPajama;2021-39/0000/en_head.json.gz/3750;paper search results;2;1;0;0;1913;88
+RedPajama;2021-39/0000/en_head.json.gz/8518;club event announcement;1;1;0;0;174;0
+RedPajama;2021-25/0000/en_middle.json.gz/25641;information about lecture on bias and racism in medicine;3;1;0;0;1517;12
