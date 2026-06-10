@@ -4,4 +4,5 @@ This repo hosts the mini projects part of the [AI Safery Course at University TÃ
 ## Projects
 1. [Base vs. post-trained LLMs and LLM jailbreaking](/01)
 2. [Emergent misalignment and detection of LLM-generated text](/02)
+3. [Understanding Data and Model Steering](/03)
 
