@@ -17,7 +17,9 @@ The main loop runns the experiment with combinations of strength x vector x thin
 To run the experiments with the `31B` model choose a sufficiently sized gpu (we observed memory spikes up to 140GB).
 
 
-### Evaluation 
+## Evaluation 
+The main script we used for evaluating the trials with Qwen-as-a-judge is `03_2_judge_batched-ipynb`. Note that this script is designed to be used in modal with additional instructions in the beginning.
+
 We used Qwen-as-a-judge for all evaluations and checked manually for correctness and additional interesting findings.
 
 For both the answer and the Chain of Thought (CoT) seperately, we evaluated the AI models on the final trials, using three metrics: 
@@ -29,9 +31,10 @@ For all evaluated texts that were prefilled, we explicitly told the judge so and
 Additionaly, in all trials with CoT enabled, we evaluated **faithfulness**: Does the model's answer match its CoT? (i.e. if the model says it detected a thought in its CoT, but then answers NO, this is unfaithful)
 
 
-## 06_plot
-
-To visually present the results some plots are required. Notebook 06 loads the result from the judge agregates the scores and creates plots in `pdf` and `png` format.
+## 05_analysis.ipynb
+In this script we evaluate the judge answers and correct it in some cases where our manual observations disagree.
+It assumes a df_evals.json file with all the results.
+Here we also generate the plots for the report.
 
 
 
