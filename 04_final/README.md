@@ -4,6 +4,10 @@
 The hand on notebook was used to get familiar with the chat template and the model architecture of gemma4. We also used this notebook to generate the controll cases for the steering awareness experiment, where we just gave the prompt of the main experiment to gemma without any steering to see if it generates false positives.
 The result of the controllcases is saved to `S3` therefore the environment variables `S3_KEY`, `S3_SECRET`, `S3_HOST` should be set.
 
+## 2_0 concept vectors
+
+This notebook calculates the concept vectors for the 50 words.
+
 ## 2_1 contrastive vectors
 
 This notebook calculates the contrastive vectors for the 8 prompts from the seed paper and stores it as a safetensor file.
