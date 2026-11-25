@@ -22,5 +22,17 @@ Notebooks use the uv magic to automatically install their dependencies.
 The last token's hidden states are extracted and added to the dataset for later tasks. 
 (`HF_TOKEN` is required to push the dataset to Hugging Face)
 
+The resulting dataset is published as [traberph/advbench-alpaca-contrastive](https://huggingface.co/datasets/traberph/advbench-alpaca-contrastive) (gated, contains harmful prompts).
+
+**Licence:** the dataset combines two sources with different licences:
+
+| rows | source | licence |
+|---|---|---|
+| `harmful == True` | [walledai/AdvBench](https://huggingface.co/datasets/walledai/AdvBench) ([llm-attacks](https://github.com/llm-attacks/llm-attacks), Zou et al. 2023) | MIT |
+| `harmful == False` | [tatsu-lab/alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca) (Taori et al. 2023) | CC BY-NC 4.0 |
+
+Hidden states are produced with `Qwen/Qwen3-4B-Instruct-2507` (Apache 2.0).
+Because it contains Alpaca material, the combined dataset is released under **CC BY-NC 4.0** (non-commercial / research use only). The AdvBench rows remain under MIT, and its notice is kept in the dataset card.
+
 `05_probing.ipynb` uses the contrastive dataset to train LogisticRegression classifier to probe the residual stream of Qwen for harmfulness. Results are plotted in a heatmap and a line plot.
 (`HF_TOKEN` is required to pull the dataset from Hugging Face)
